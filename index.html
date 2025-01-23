@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinod Nagar - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Vinod Nagar</h1>
+        <h2>Full Stack Developer</h2>
+        <img src="vinod.jpeg" alt="Vinod Nagar" class="profile-image">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h3>About Me</h3>
+        <p>I am a Full Stack Developer with one year of experience in both frontend and backend web development. I specialize in JavaScript and have honed my skills in creating seamless user experiences and efficient server-side operations. My expertise lies in bridging the gap between frontend aesthetics and backend functionality, making me a versatile and valuable asset in the field of web development.</p>
+    </section>
+
+    <section id="skills">
+        <h3>Technical Skills</h3>
+        <ul>
+            <li><strong>Languages & Frameworks:</strong> JavaScript, React.js, Node.js, C, C++, TypeScript</li>
+            <li><strong>Web Technologies:</strong> HTML, CSS, Bootstrap</li>
+            <li><strong>Version Control:</strong> Git, GitHub</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h3>Experience</h3>
+        <ul>
+            <li><strong>Webstack Make Solutions</strong> - MERN Stack Intern (January 2024 - June 2024)</li>
+            <li><strong>Red & White Multimedia</strong> - Full Stack JS Developer (June 2024 - Present)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h3>Projects</h3>
+        <div class="project-gallery">
+            <div class="project" onclick="showModal('Project 1', 'This Project Is purely developed in Mern Stack', 'https://github.com/vinodnagar1/red-and-white')">
+                <h4>Eye Wear Ecommerce Website</h4>
+                <p>This Project Is purely developed in Mern Stack</p>
+            </div>
+            <div class="project" onclick="showModal('Project 2', 'This project is about Movie Recommended system I used Mongodb React And node in this', 'https://github.com/vinodnagar1/movierecom')">
+                <h4>Movie Recommended system</h4>
+                <p>This project is about Movie Recommended system I used Mongodb React And node in this</p>
+            </div>
+            <div class="project" onclick="showModal('Project 3', 'Full Stack Ecommerce with admin Panel', 'https://github.com/vinodnagar1/project-fullstack')">
+                <h4>Full Stack Ecommerce with admin Panel</h4>
+                <p>Full Stack Ecommerce with admin Panel</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h3>Contact Information</h3>
+        <p>Email: <a href="mailto:vinodnagar628@gmail.com">vinodnagar628@gmail.com</a></p>
+        <p>Phone: 9983480346</p>
+        <p>Location: Baran, Rajasthan</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vinod Nagar. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for Project Details -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h4 id="modal-title"></h4>
+            <p id="modal-description"></p>
+            <a id="modal-link" href="#" target="_blank">View Project</a>
+        </div>
+    </div>
+</body>
+</html>
